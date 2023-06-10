@@ -1,11 +1,17 @@
-import { getOne, getAllUser } from "../controller/userController.js";
 import {
-  verifyToken,
-  verifyTokenAndAdmin,
-  verifyTokenAndAuthorization,
-} from "../middleware/verifyToken.js";
+  create,
+  Login,
+  getUser,
+  getAllUser,
+  updatePasword,
+  getAllTotal,
+} from "../controller/userController.js";
 
 export const userRoutes = (router) => {
-  router.get("/api/users/:id", verifyToken, getOne);
-  router.get("/api/users", verifyTokenAndAdmin, getAllUser);
+  // router.post("/api/users", create);
+  router.post("/api/users/login", Login);
+  router.put("/api/users/updatePassword/:id", updatePasword);
+  // router.get("/api/users/:id", getUser);
+  // router.get("/api/users", getAllUser);
+  router.get("/api/total", getAllTotal);
 };

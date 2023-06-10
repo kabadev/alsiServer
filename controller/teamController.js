@@ -8,6 +8,7 @@ export const createItem = async (req, res) => {
     const newTeam = new Team({
       fullName: req.body.fullName,
       position: req.body.position,
+      teamType: req.body.type,
       facebook: req.body.facebook,
       instagram: req.body.instagram,
       twitter: req.body.twitter,
@@ -45,6 +46,7 @@ export const updateItem = async (req, res) => {
     const data = {
       fullName: req.body.fullName,
       position: req.body.position,
+      teamType: req.body.type,
       facebook: req.body.facebook,
       instagram: req.body.instagram,
       twitter: req.body.twitter,

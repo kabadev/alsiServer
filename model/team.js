@@ -12,6 +12,10 @@ const TeamSchema = new Schema(
       type: String,
       default: "",
     },
+    teamType: {
+      type: String,
+      default: "Executive",
+    },
     facebook: {
       type: String,
       default: "",
