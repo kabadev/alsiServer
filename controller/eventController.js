@@ -1,4 +1,4 @@
-import Event from "../model/Event.js";
+import Event from "../model/event.js";
 import slugify from "slugify";
 import { deleteImage, uploadImageToCloudinary } from "../util/cloudinary.js";
 // create

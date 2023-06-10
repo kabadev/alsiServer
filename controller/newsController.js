@@ -1,4 +1,4 @@
-import News from "../model/News.js";
+import News from "../model/news.js";
 import slugify from "slugify";
 import { uploadImageToCloudinary, deleteImage } from "../util/cloudinary.js";
 // create

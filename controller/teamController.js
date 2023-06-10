@@ -1,4 +1,4 @@
-import Team from "../model/Team.js";
+import Team from "../model/team.js";
 import { uploadImageToCloudinary, deleteImage } from "../util/cloudinary.js";
 // create
 export const createItem = async (req, res) => {

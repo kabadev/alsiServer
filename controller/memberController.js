@@ -1,4 +1,4 @@
-import Member from "../model/Member.js";
+import Member from "../model/member.js";
 import slugify from "slugify";
 import { deleteImage, uploadImageToCloudinary } from "../util/cloudinary.js";
 // create
