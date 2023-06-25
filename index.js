@@ -25,6 +25,7 @@ app.use(
   cors({
     origin: [
       process.env.ClIENT_URL,
+      https://alsiadmin.alsi22.com,
       "http://localhost:3000",
       "http://localhost:3001",
     ],
